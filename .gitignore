@@ -1,0 +1,6 @@
+*-backups
+Output/*
+\#*
+*.jpg
+*-bak
+
