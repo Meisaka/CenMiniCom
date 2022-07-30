@@ -86,7 +86,9 @@ def extract_bin(outfile:BufferedWriter, sector_list:list):
                 if slbuf[i] < 9 or slbuf[i] == 11 or slbuf[i] == 12 or slbuf[i] == 127 or (slbuf[i] > 13 and slbuf[i] < 32):
                     slbuf[i] = 0x2e
             #vofs = recbase
-            print(recbase.hex(),rectype,(recsum & 0xff) == 0,':', fcvb[ofs+4:ofs+4+reclen].hex(' '), repr(bytes(slbuf)))
+            #print(recbase.hex(),rectype,(recsum & 0xff) == 0,':', fcvb[ofs+4:ofs+4+reclen].hex(' '), repr(bytes(slbuf)))
+            if rectype == 0:
+                print(recbase.hex(),':', repr(bytes(slbuf)))
             ofs += 5+reclen
         #outfile.write(fcvb)
     pass
@@ -177,42 +179,45 @@ def filelist(start:int, use_offset=False, base=''):
                 elif fentfile == search:
                     print('MATCH FILE')
                     match = True
-            if show or match:
-                print(start.to_bytes(2,'big').hex(),':',ent.to_bytes(4,'big').hex(),' -> ',
-                    str(fentpath).ljust(16),':',filetype(ftype).ljust(6),':',fdatef,
-                    ' (',(mapsec + fmapsec).to_bytes(4,'big').hex(),':',fmap.to_bytes(1,'big').hex(),
-                    ')-> l:',fxlen.to_bytes(2,'big').hex(),' ',fxbuffer.hex().upper(),' m:',fx2.hex().upper(),
-                    ' sz:',(len(msec) * fxsize).to_bytes(2,'big').hex(),' '
-                    ' ',hex(msec[0]),'=>',hex(msec[0]*0x200),
-                    #'[',','.join([hex(x) for x in msec]),']',
-                    sep='')
-            if match:
-                msecfull = []
-                for x in msec:
-                    msecfull.extend(range(x, x+fxsize))
-                print('[',','.join([hex(y) for y in msecfull]),']',)
-                if inargs.d:
-                    if inargs.t and (ftype == 0x12 or ftype not in FILETYPES):
-                        extract_text(sys.stdout.buffer, msecfull)
-                    elif ftype == 0x14:
-                        extract_bin(sys.stdout.buffer, msecfull)
-                elif inargs.x:
-                    outpath = f.parent / Path(f.stem + '_EX_' + fentfile.name)
-                    outfile = outpath.open('w+b')
-                    if inargs.t and (ftype == 0x12 or ftype not in FILETYPES):
-                        extract_text(outfile, msecfull)
-                    elif ftype == 0x14:
-                        extract_bin(outfile, msecfull)
+            try:
+                if show or match:
+                    print(start.to_bytes(2,'big').hex(),':',ent.to_bytes(4,'big').hex(),' -> ',
+                        str(fentpath).ljust(16),':',filetype(ftype).ljust(6),':',fdatef,
+                        ' (',(mapsec + fmapsec).to_bytes(4,'big').hex(),':',fmap.to_bytes(1,'big').hex(),
+                        ')-> l:',fxlen.to_bytes(2,'big').hex(),' ',fxbuffer.hex().upper(),' m:',fx2.hex().upper(),
+                        ' sz:',(len(msec) * fxsize).to_bytes(2,'big').hex(),' '
+                        ' ',hex(msec[0]),'=>',hex(msec[0]*0x200),
+                        '[',','.join([hex(x) for x in msec]),']',
+                        sep='')
+                if match:
+                    msecfull = []
+                    for x in msec:
+                        msecfull.extend(range(x, x+fxsize))
+                    print('[',','.join([hex(y) for y in msecfull]),']',)
+                    if inargs.d:
+                        if inargs.t and (ftype == 0x12 or ftype not in FILETYPES):
+                            extract_text(sys.stdout.buffer, msecfull)
+                        elif ftype == 0x14:
+                            extract_bin(sys.stdout.buffer, msecfull)
+                    elif inargs.x:
+                        outpath = f.parent / Path(f.stem + '_EX_' + fentfile.name)
+                        outfile = outpath.open('w+b')
+                        if inargs.t and (ftype == 0x12 or ftype not in FILETYPES):
+                            extract_text(outfile, msecfull)
+                        elif ftype == 0x14:
+                            extract_bin(outfile, msecfull)
+                        else:
+                            extract_raw(outfile, msecfull)
+                        outfile.close()
+                        print('wrote', outpath)
+                
+                if ftype == 0x15 and len(msec) > 0:
+                    if use_offset:
+                        filelist(msec[0], True, volnamestr + '.' + fentstr)
                     else:
-                        extract_raw(outfile, msecfull)
-                    outfile.close()
-                    print('wrote', outpath)
-            
-            if ftype == 0x15 and len(msec) > 0:
-                if use_offset:
-                    filelist(msec[0], True, volnamestr + '.' + fentstr)
-                else:
-                    filelist(msec[0], True, base + '.' + fentstr)
+                        filelist(msec[0], True, base + '.' + fentstr)
+            except:
+                print('invalid or corrupt entry')
             entofs += 0x10
         ind += 1
         entofs = 0
