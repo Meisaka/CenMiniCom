@@ -6,8 +6,8 @@
 
   (title_block
     (title "Centurion VI CPU")
-    (date "2022-08-02")
-    (rev "25")
+    (date "2022-11-05")
+    (rev "26")
     (company "Meisaka Yukara")
     (comment 1 "Visual Reverse Engineered - May contain errors and/or artifacts")
     (comment 2 "Additional connections are traced from continutity testing")
@@ -38092,7 +38092,7 @@
     (property "Value" "AM93L422" (id 1) (at 210.82 378.46 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_DIP:DIP-22_W7.62mm_Socket" (id 2) (at 215.9 374.65 0)
+    (property "Footprint" "Package_DIP:DIP-22_W10.16mm_Socket" (id 2) (at 215.9 374.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 215.9 374.65 0)
@@ -40329,7 +40329,7 @@
     (property "Value" "AM93L422" (id 1) (at 210.82 299.72 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_DIP:DIP-22_W7.62mm_Socket" (id 2) (at 215.9 295.91 0)
+    (property "Footprint" "Package_DIP:DIP-22_W10.16mm_Socket" (id 2) (at 215.9 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 215.9 295.91 0)
@@ -43474,7 +43474,7 @@
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "AM93L422" (id 1) (at 429.26 71.12 90))
-    (property "Footprint" "Package_DIP:DIP-22_W7.62mm_Socket" (id 2) (at 429.26 64.77 0)
+    (property "Footprint" "Package_DIP:DIP-22_W10.16mm_Socket" (id 2) (at 429.26 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 429.26 64.77 0)
@@ -46735,7 +46735,7 @@
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "AM93L422" (id 1) (at 429.26 127 90))
-    (property "Footprint" "Package_DIP:DIP-22_W7.62mm_Socket" (id 2) (at 429.26 120.65 0)
+    (property "Footprint" "Package_DIP:DIP-22_W10.16mm_Socket" (id 2) (at 429.26 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 429.26 120.65 0)
@@ -49545,10 +49545,10 @@
       (reference "U_B8") (unit 2) (value "74LS30") (footprint "Package_DIP:DIP-14_W7.62mm")
     )
     (path "/45380ac4-2d14-4c77-84c9-3c84e236c620"
-      (reference "U_B9") (unit 1) (value "AM93L422") (footprint "Package_DIP:DIP-22_W7.62mm_Socket")
+      (reference "U_B9") (unit 1) (value "AM93L422") (footprint "Package_DIP:DIP-22_W10.16mm_Socket")
     )
     (path "/6deb5b2a-7379-4330-8bd2-28724b38ec03"
-      (reference "U_B10") (unit 1) (value "AM93L422") (footprint "Package_DIP:DIP-22_W7.62mm_Socket")
+      (reference "U_B10") (unit 1) (value "AM93L422") (footprint "Package_DIP:DIP-22_W10.16mm_Socket")
     )
     (path "/0703fd9f-471a-4a41-a6d5-5e01d4106c25"
       (reference "U_B11") (unit 1) (value "74LS10") (footprint "Package_DIP:DIP-14_W7.62mm")
@@ -49758,10 +49758,10 @@
       (reference "U_D13") (unit 1) (value "74LS374") (footprint "Package_DIP:DIP-20_W7.62mm")
     )
     (path "/deee1c09-0c5e-4db0-ab39-5f4e3eafb3e0"
-      (reference "U_D14") (unit 1) (value "AM93L422") (footprint "Package_DIP:DIP-22_W7.62mm_Socket")
+      (reference "U_D14") (unit 1) (value "AM93L422") (footprint "Package_DIP:DIP-22_W10.16mm_Socket")
     )
     (path "/acd28f59-548b-4a07-82ee-d1004be02013"
-      (reference "U_D15") (unit 1) (value "AM93L422") (footprint "Package_DIP:DIP-22_W7.62mm_Socket")
+      (reference "U_D15") (unit 1) (value "AM93L422") (footprint "Package_DIP:DIP-22_W10.16mm_Socket")
     )
     (path "/55c9bb19-11cb-4bdb-80a7-6ae411c5608c"
       (reference "U_E5") (unit 1) (value "74LS174") (footprint "Package_DIP:DIP-16_W7.62mm")
