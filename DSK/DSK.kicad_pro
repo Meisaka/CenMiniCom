@@ -1,6 +1,8 @@
 {
   "board": {
-    "layer_presets": []
+    "3dviewports": [],
+    "layer_presets": [],
+    "viewports": []
   },
   "boards": [],
   "cvpcb": {
@@ -248,56 +250,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Address",
-        "nets": [
-          "/BusA_{0}",
-          "/BusA_{10}",
-          "/BusA_{11}",
-          "/BusA_{12}",
-          "/BusA_{13}",
-          "/BusA_{14}",
-          "/BusA_{15}",
-          "/BusA_{1}",
-          "/BusA_{2}",
-          "/BusA_{3}",
-          "/BusA_{4}",
-          "/BusA_{5}",
-          "/BusA_{6}",
-          "/BusA_{7}",
-          "/BusA_{8}",
-          "/BusA_{9}",
-          "/StateA_{0}",
-          "/StateA_{1}",
-          "/StateA_{2}",
-          "/StateA_{3}",
-          "/SysA_{0}",
-          "/SysA_{1}",
-          "/SysA_{2}",
-          "/~{CylinderA_{0}}",
-          "/~{CylinderA_{1}}",
-          "/~{CylinderA_{2}}",
-          "/~{CylinderA_{3}}",
-          "/~{CylinderA_{4}}",
-          "/~{CylinderA_{5}}",
-          "/~{CylinderA_{6}}",
-          "/~{CylinderA_{7}}",
-          "/~{CylinderA_{8}}",
-          "Sys.~{A_{0}}",
-          "Sys.~{A_{10}}",
-          "Sys.~{A_{11}}",
-          "Sys.~{A_{12}}",
-          "Sys.~{A_{13}}",
-          "Sys.~{A_{14}}",
-          "Sys.~{A_{15}}",
-          "Sys.~{A_{1}}",
-          "Sys.~{A_{2}}",
-          "Sys.~{A_{3}}",
-          "Sys.~{A_{4}}",
-          "Sys.~{A_{5}}",
-          "Sys.~{A_{6}}",
-          "Sys.~{A_{7}}",
-          "Sys.~{A_{8}}",
-          "Sys.~{A_{9}}"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(63, 229, 83)",
         "track_width": 0.25,
@@ -315,40 +268,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Data",
-        "nets": [
-          "/ID_{0}",
-          "/ID_{1}",
-          "/ID_{2}",
-          "/ID_{3}",
-          "/ID_{4}",
-          "/ID_{5}",
-          "/ID_{6}",
-          "/ID_{7}",
-          "/RD_{0}",
-          "/RD_{1}",
-          "/RD_{2}",
-          "/RD_{3}",
-          "/RD_{4}",
-          "/RD_{5}",
-          "/RD_{6}",
-          "/RD_{7}",
-          "/SOut.D_{0}",
-          "/SOut.D_{1}",
-          "/SOut.D_{2}",
-          "/SOut.D_{3}",
-          "/SOut.D_{4}",
-          "/SOut.D_{5}",
-          "/SOut.D_{6}",
-          "/SOut.D_{7}",
-          "Sys.~{D_{0}}",
-          "Sys.~{D_{1}}",
-          "Sys.~{D_{2}}",
-          "Sys.~{D_{3}}",
-          "Sys.~{D_{4}}",
-          "Sys.~{D_{5}}",
-          "Sys.~{D_{6}}",
-          "Sys.~{D_{7}}"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(122, 76, 217)",
         "track_width": 0.25,
@@ -366,18 +286,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "OCInput",
-        "nets": [
-          "/DSK2.~{AFA_{0}}",
-          "/DSK2.~{AFA_{1}}",
-          "/DSK2.~{AFA_{2}}",
-          "/DSK2.~{AFA_{3}}",
-          "/~{AddressAck}",
-          "/~{SectorA_{0}}",
-          "/~{SectorA_{1}}",
-          "/~{SectorA_{2}}",
-          "/~{SectorA_{3}}",
-          "/~{Spare}"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(90, 191, 164)",
         "track_width": 0.25,
@@ -395,22 +304,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "OCStatus",
-        "nets": [
-          "/DSK2.~{AddressError}",
-          "/DSK2.~{Busy}",
-          "/DSK2.~{CRCError}",
-          "/DSK2.~{FormatError}",
-          "/DSK2.~{TimeoutError}",
-          "/~{Fault}",
-          "/~{Interrupt1}",
-          "/~{Interrupt2}",
-          "/~{Interrupt3}",
-          "/~{Interrupt4}",
-          "/~{OnCylinder}",
-          "/~{Ready}",
-          "/~{SeekError}",
-          "/~{WriteStatus}"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(200, 126, 54)",
         "track_width": 0.25,
@@ -429,7 +323,15 @@
         "microvia_drill": 0.1,
         "name": "PullupPower",
         "nets": [
-          "/TTL5V_D2"
+          "/TTL5V_4",
+          "/TTL5V_C3",
+          "/TTL5V_D2",
+          "/TTL5V_D6",
+          "/TTL5V_F8",
+          "/TTL5V_H7",
+          "/TTL5V_J2",
+          "/TTL5V_J5",
+          "/TTL5V_K7"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(199, 153, 197)",
@@ -442,7 +344,434 @@
     "meta": {
       "version": 2
     },
-    "net_colors": null
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": [
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{0}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{10}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{11}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{12}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{13}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{14}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{15}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{1}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{2}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{3}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{4}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{5}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{6}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{7}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{8}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/BusA_{9}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/StateA_{0}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/StateA_{1}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/StateA_{2}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/StateA_{3}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/SysA_{0}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/SysA_{1}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/SysA_{2}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/~{CylinderA_{0}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/~{CylinderA_{1}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/~{CylinderA_{2}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/~{CylinderA_{3}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/~{CylinderA_{4}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/~{CylinderA_{5}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/~{CylinderA_{6}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/~{CylinderA_{7}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/~{CylinderA_{8}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{0}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{10}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{11}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{12}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{13}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{14}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{15}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{1}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{2}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{3}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{4}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{5}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{6}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{7}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{8}}"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "Sys.~{A_{9}}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/ID_{0}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/ID_{1}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/ID_{2}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/ID_{3}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/ID_{4}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/ID_{5}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/ID_{6}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/ID_{7}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/RD_{0}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/RD_{1}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/RD_{2}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/RD_{3}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/RD_{4}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/RD_{5}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/RD_{6}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/RD_{7}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/SOut.D_{0}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/SOut.D_{1}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/SOut.D_{2}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/SOut.D_{3}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/SOut.D_{4}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/SOut.D_{5}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/SOut.D_{6}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/SOut.D_{7}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "Sys.~{D_{0}}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "Sys.~{D_{1}}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "Sys.~{D_{2}}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "Sys.~{D_{3}}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "Sys.~{D_{4}}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "Sys.~{D_{5}}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "Sys.~{D_{6}}"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "Sys.~{D_{7}}"
+      },
+      {
+        "netclass": "OCInput",
+        "pattern": "/DSK2.~{AFA_{0}}"
+      },
+      {
+        "netclass": "OCInput",
+        "pattern": "/DSK2.~{AFA_{1}}"
+      },
+      {
+        "netclass": "OCInput",
+        "pattern": "/DSK2.~{AFA_{2}}"
+      },
+      {
+        "netclass": "OCInput",
+        "pattern": "/DSK2.~{AFA_{3}}"
+      },
+      {
+        "netclass": "OCInput",
+        "pattern": "/~{AddressAck}"
+      },
+      {
+        "netclass": "OCInput",
+        "pattern": "/~{SectorA_{0}}"
+      },
+      {
+        "netclass": "OCInput",
+        "pattern": "/~{SectorA_{1}}"
+      },
+      {
+        "netclass": "OCInput",
+        "pattern": "/~{SectorA_{2}}"
+      },
+      {
+        "netclass": "OCInput",
+        "pattern": "/~{SectorA_{3}}"
+      },
+      {
+        "netclass": "OCInput",
+        "pattern": "/~{Spare}"
+      },
+      {
+        "netclass": "OCStatus",
+        "pattern": "/DSK2.~{AddressError}"
+      },
+      {
+        "netclass": "OCStatus",
+        "pattern": "/DSK2.~{Busy}"
+      },
+      {
+        "netclass": "OCStatus",
+        "pattern": "/DSK2.~{CRCError}"
+      },
+      {
+        "netclass": "OCStatus",
+        "pattern": "/DSK2.~{FormatError}"
+      },
+      {
+        "netclass": "OCStatus",
+        "pattern": "/DSK2.~{TimeoutError}"
+      },
+      {
+        "netclass": "OCStatus",
+        "pattern": "/~{Fault}"
+      },
+      {
+        "netclass": "OCStatus",
+        "pattern": "/~{Interrupt1}"
+      },
+      {
+        "netclass": "OCStatus",
+        "pattern": "/~{Interrupt2}"
+      },
+      {
+        "netclass": "OCStatus",
+        "pattern": "/~{Interrupt3}"
+      },
+      {
+        "netclass": "OCStatus",
+        "pattern": "/~{Interrupt4}"
+      },
+      {
+        "netclass": "OCStatus",
+        "pattern": "/~{OnCylinder}"
+      },
+      {
+        "netclass": "OCStatus",
+        "pattern": "/~{Ready}"
+      },
+      {
+        "netclass": "OCStatus",
+        "pattern": "/~{SeekError}"
+      },
+      {
+        "netclass": "OCStatus",
+        "pattern": "/~{WriteStatus}"
+      },
+      {
+        "netclass": "PullupPower",
+        "pattern": "/TTL5V_C3"
+      },
+      {
+        "netclass": "PullupPower",
+        "pattern": "/TTL5V_D2"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -458,6 +787,8 @@
   "schematic": {
     "annotate_start_num": 0,
     "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
@@ -478,9 +809,13 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "./",
     "spice_adjust_passive_values": false,
+    "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
