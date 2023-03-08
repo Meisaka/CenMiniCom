@@ -1,5 +1,6 @@
 {
   "board": {
+    "3dviewports": [],
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.09999999999999999,
@@ -45,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.30479999999999996
         }
       },
       "diff_pair_dimensions": [
@@ -104,33 +105,86 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.07619999999999999,
+        "min_connection": 0.0,
         "min_copper_edge_clearance": 0.0,
         "min_hole_clearance": 0.15239999999999998,
         "min_hole_to_hole": 0.254,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
+        "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
+        "min_text_height": 0.7999999999999999,
+        "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.07619999999999999,
         "min_via_annular_width": 0.049999999999999996,
         "min_via_diameter": 0.39999999999999997,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
+      "teardrop_options": [
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 5,
+          "td_on_pad_in_zone": false,
+          "td_onpadsmd": true,
+          "td_onroundshapesonly": false,
+          "td_ontrackend": false,
+          "td_onviapad": true
+        }
+      ],
+      "teardrop_parameters": [
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_round_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_rect_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_track_end",
+          "td_width_to_size_filter_ratio": 0.9
+        }
+      ],
       "track_widths": [
-        0.0
+        0.0,
+        0.1524,
+        0.3048,
+        0.6096
       ],
       "via_dimensions": [
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
-    "layer_presets": []
+    "layer_presets": [],
+    "viewports": []
   },
   "boards": [],
   "cvpcb": {
@@ -406,9 +460,62 @@
         "microvia_drill": 0.1,
         "name": "Ext",
         "nets": [
-          "/~{P7_2}",
+          "/Sys.5MHz",
+          "/Sys.Reset",
+          "/Sys.~{APRE}",
+          "/Sys.~{A_{0}}",
+          "/Sys.~{A_{10}}",
+          "/Sys.~{A_{1}}",
+          "/Sys.~{A_{2}}",
+          "/Sys.~{A_{3}}",
+          "/Sys.~{A_{4}}",
+          "/Sys.~{A_{5}}",
+          "/Sys.~{A_{6}}",
+          "/Sys.~{A_{7}}",
+          "/Sys.~{A_{8}}",
+          "/Sys.~{A_{9}}",
+          "/Sys.~{CA_{15}}",
+          "/Sys.~{CPL_{0}}",
+          "/Sys.~{CPL_{1}}",
+          "/Sys.~{CPL_{2}}",
+          "/Sys.~{CPL_{3}}",
+          "/Sys.~{DRDY}",
+          "/Sys.~{D_{0}}",
+          "/Sys.~{D_{1}}",
+          "/Sys.~{D_{2}}",
+          "/Sys.~{D_{3}}",
+          "/Sys.~{D_{4}}",
+          "/Sys.~{D_{5}}",
+          "/Sys.~{D_{6}}",
+          "/Sys.~{D_{7}}",
+          "/Sys.~{INR0}",
+          "/Sys.~{INR1}",
+          "/Sys.~{INR2}",
+          "/Sys.~{INR3}",
+          "/Sys.~{INTACK}",
+          "/Sys.~{INTREQ}",
+          "/Sys.~{MemFault}",
+          "/Sys.~{PA_{11}}",
+          "/Sys.~{PA_{12}}",
+          "/Sys.~{PA_{13}}",
+          "/Sys.~{PA_{14}}",
+          "/Sys.~{PA_{15}}",
+          "/Sys.~{PA_{16}}",
+          "/Sys.~{PA_{17}}",
+          "/Sys.~{PTR7_oc}",
+          "/Sys.~{ParityTest}",
+          "/Sys.~{RA_{11}}",
+          "/Sys.~{RA_{12}}",
+          "/Sys.~{RA_{13}}",
+          "/Sys.~{RA_{14}}",
+          "/Sys.~{RA_{15}}",
+          "/Sys.~{RDIN}",
+          "/Sys.~{WTIN}",
           "P7_1",
+          "P7_13",
           "P7_2",
+          "P7_3",
+          "P7_4",
           "P7_5",
           "P7_8"
         ],
@@ -473,7 +580,110 @@
     "meta": {
       "version": 2
     },
-    "net_colors": null
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": [
+      {
+        "netclass": "Alt",
+        "pattern": "DataP.D_{0}"
+      },
+      {
+        "netclass": "Alt",
+        "pattern": "DataP.D_{1}"
+      },
+      {
+        "netclass": "Alt",
+        "pattern": "DataP.D_{2}"
+      },
+      {
+        "netclass": "Alt",
+        "pattern": "DataP.D_{3}"
+      },
+      {
+        "netclass": "Alt",
+        "pattern": "DataP.D_{4}"
+      },
+      {
+        "netclass": "Alt",
+        "pattern": "DataP.D_{5}"
+      },
+      {
+        "netclass": "Alt",
+        "pattern": "DataP.D_{6}"
+      },
+      {
+        "netclass": "Alt",
+        "pattern": "DataP.D_{7}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/~{P7_2}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "P7_1"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "P7_2"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "P7_5"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "P7_8"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+12V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "-12V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Res",
+        "pattern": "Res.D_{0}"
+      },
+      {
+        "netclass": "Res",
+        "pattern": "Res.D_{1}"
+      },
+      {
+        "netclass": "Res",
+        "pattern": "Res.D_{2}"
+      },
+      {
+        "netclass": "Res",
+        "pattern": "Res.D_{3}"
+      },
+      {
+        "netclass": "Res",
+        "pattern": "Res.D_{4}"
+      },
+      {
+        "netclass": "Res",
+        "pattern": "Res.D_{5}"
+      },
+      {
+        "netclass": "Res",
+        "pattern": "Res.D_{6}"
+      },
+      {
+        "netclass": "Res",
+        "pattern": "Res.D_{7}"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

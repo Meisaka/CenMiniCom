@@ -37238,7 +37238,7 @@
     (property "Value" "Conn_02x07_Counter_Clockwise" (id 1) (at 971.55 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket" (id 2) (at 970.28 127 0)
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x07_P2.54mm_Vertical" (id 2) (at 970.28 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 970.28 127 0)
@@ -37421,7 +37421,7 @@
     (property "Value" "Conn_02x08_Counter_Clockwise" (id 1) (at 209.55 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Package_DIP:DIP-16_W7.62mm_Socket" (id 2) (at 220.98 175.26 0)
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" (id 2) (at 220.98 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 220.98 175.26 0)
@@ -38817,7 +38817,7 @@
     (property "Value" "Conn_02x08_Counter_Clockwise" (id 1) (at 335.28 477.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Package_DIP:DIP-16_W7.62mm_Socket" (id 2) (at 334.01 488.95 0)
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" (id 2) (at 334.01 488.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 334.01 488.95 0)
@@ -39199,7 +39199,7 @@
     (property "Value" "Conn_02x08_Counter_Clockwise" (id 1) (at 434.34 737.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Package_DIP:DIP-16_W7.62mm_Socket" (id 2) (at 433.07 749.3 0)
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" (id 2) (at 433.07 749.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 433.07 749.3 0)
@@ -49322,7 +49322,7 @@
       (reference "P3") (unit 1) (value "Conn_02x13_Top_Bottom") (footprint "Connector_IDC:IDC-Header_2x13_P2.54mm_Horizontal")
     )
     (path "/36b1963e-aa68-4411-9aa5-b683175266d8"
-      (reference "P4") (unit 1) (value "Conn_02x08_Counter_Clockwise") (footprint "Package_DIP:DIP-16_W7.62mm_Socket")
+      (reference "P4") (unit 1) (value "Conn_02x08_Counter_Clockwise") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical")
     )
     (path "/d109bfe5-d244-4008-b2ee-fc6e7c40725a"
       (reference "P5") (unit 1) (value "Conn_02x25_Counter_Clockwise") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x25_P2.54mm_Vertical")
@@ -49331,13 +49331,13 @@
       (reference "P6") (unit 1) (value "Conn_02x25_Counter_Clockwise") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x25_P2.54mm_Vertical")
     )
     (path "/3493fc55-a358-4628-9b64-c3641a801d0d"
-      (reference "P7") (unit 1) (value "Conn_02x07_Counter_Clockwise") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
+      (reference "P7") (unit 1) (value "Conn_02x07_Counter_Clockwise") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x07_P2.54mm_Vertical")
     )
     (path "/5943cba3-5839-4484-8de5-060d70d1310d"
-      (reference "P8") (unit 1) (value "Conn_02x08_Counter_Clockwise") (footprint "Package_DIP:DIP-16_W7.62mm_Socket")
+      (reference "P8") (unit 1) (value "Conn_02x08_Counter_Clockwise") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical")
     )
     (path "/5526b978-6091-4308-8cc5-df61e46dff5e"
-      (reference "P10") (unit 1) (value "Conn_02x08_Counter_Clockwise") (footprint "Package_DIP:DIP-16_W7.62mm_Socket")
+      (reference "P10") (unit 1) (value "Conn_02x08_Counter_Clockwise") (footprint "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical")
     )
     (path "/314bd753-a531-42e2-88ae-163e7747a0c2"
       (reference "R1") (unit 1) (value "330") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
