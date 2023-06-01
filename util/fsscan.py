@@ -211,7 +211,7 @@ def filelist(start:int, use_offset=False, base=''):
                         elif ftype == 0x04 or ftype == 0x14:
                             extract_bin(sys.stdout.buffer, msecfull)
                     elif inargs.x:
-                        pathparts=fentpath.lstrip('.').split('.')
+                        pathparts=fentpath.lstrip('.').replace('?','_').split('.')
                         relpath:Path = Path(f.stem)
                         for pp in pathparts:
                             relpath.mkdir(exist_ok=True)
