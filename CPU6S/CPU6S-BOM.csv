@@ -1,0 +1,66 @@
+"Source:","S:\cen\CPU\CPU6S\CPU6S.kicad_sch",,,,,
+"Socket Count:","122",,,,,
+"Refs","Qty",Socket type,,,,
+"U_A1, U_A2, U_A3, U_A13, U_A14, U_A15, U_B7, U_B8, U_B11, U_B12, U_B15, U_D12, U_C7, U_C8, U_C10, U_D8, U_D10, U_E8, U_E10, U_E11, U_E12, U_E14, U_E15, U_F12, U_F14, U_H13, U_J6, U_K6, U_K10, U_K12, U_L6, U_L10, U_L14, U_M9, U_M10","35",DIP-14 Width 0.3in 7.62mm,,,,
+"U_B1, U_B2, U_B3, U_B4, U_B5, U_B6, U_C1, U_C2, U_C3, U_C4, U_C5, U_C6, U_C14, U_C15, U_D2, U_D7, U_D3, U_D4, U_D5, U_D6, U_D9, U_D11, U_F6, U_E5, U_E6, U_E7, U_F11, U_F13, U_H6, U_H11, U_H12, U_H14, U_J9, U_J10, U_J11, U_J12, U_J13, U_K9, U_K11, U_K13, U_L11, U_L13, U_M12, U_M13","44",DIP-16 Width 0.3in 7.62mm,,,,
+"U_A4, U_A5, U_A6, U_A7, U_A8, U_A9, U_A10, UA11, UA12, UB11, UB12, U_C9, U_C11, U_C13, U_D13, U_F5, U_H5, U_J5, U_K5, U_L5, U_L9, U_M5, U_M6, U_M7, U_M8, U_M14, U_M15","27",DIP-20 Width 0.3in 7.62mm,,,,
+"U_B9, U_B10, U_D14, U_D15","4",DIP-22 Width 0.4in 10.16mm,,,,
+"U_F7, U_F9","2",DIP-40 Width 0.6in 15.24mm,,,,
+"U_J7, U_K7","2",DIP-28 Width 0.6in 15.24mm,,,,
+"U_B13","1",DIP-24 Width 0.6in 15.24mm,,,,
+"U_MWE2, U_MWF2, U_MWH2, U_MWJ2, U_MWK2, U_MWL2, U_MWM2","7","DIP-24 or DIP-28 Width 0.6in 15.24mm""",,,,
+"Component Count:","223",,,,,
+"Refs","Qty",Value,Cmp name,Description,Vendor,Footprint
+"C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C20, C21, C22, C23, C24, C25, C26, C27, C28, C29, C30, C31, C32, C33, C34, C35, C36, C37, C38, C40, C41, C42, C43, C44, C45, C46, C47, C48, C49, C50, C51, C54, C57, C58, C59, C60, C61, C62, C63, C64, C65, C66, C67, C68, C69, C70, C71","66",100nF,C_Small,"Unpolarized capacitor, small symbol",,Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm
+"C39","1",470uF,C_Polarized,Polarized capacitor,,Capacitor_THT:C_Radial_D8.0mm_H7.0mm_P3.50mm
+"C52, C53","2",1000uF,C_Polarized,Polarized capacitor,,Capacitor_THT:CP_Axial_L25.0mm_D10.0mm_P30.00mm_Horizontal
+"C55, C56","2",22p,C_Small,"Unpolarized capacitor, small symbol",,Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm
+"CR1","1",Diode,D,Diode,,Diode_THT:D_A-405_P10.16mm_Horizontal
+"DSW1","1",SW_DIP_x08,SW_DIP_x08,"8x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol",,Button_Switch_THT:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm
+"P2, P3","2",2x13 Horizontal IDC Header,Conn_02x13_Odd_Even,,,Connector_IDC:IDC-Header_2x13_P2.54mm_Horizontal
+"P4, P8, P10","3",2x8 Pin Socket,Conn_02x08_Counter_Clockwise,,,Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical
+"P5, P6","2",2x25 Pin Header,Conn_02x25_Odd_Even,,,Connector_PinHeader_2.54mm:PinHeader_2x25_P2.54mm_Vertical
+"P7","1",2x7 Pin Socket,Conn_02x07_Counter_Clockwise,,,Connector_PinSocket_2.54mm:PinSocket_2x07_P2.54mm_Vertical
+"R1, R2, R3","3",330,R,Resistor,,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+"R4","1",220/330,R_Network_Dividers_x08_SIP,"8 voltage divider network, dual terminator, SIP package",,Resistor_THT:R_Array_SIP10
+"R5","1",470,R,Resistor,,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+"R6, R9, R10, R11, R14, R17","6",1k,R,Resistor,,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+"R7","1",4.7k,R_Network09,"9 resistor network, star topology, bussed resistors, small symbol",,Resistor_THT:R_Array_SIP10
+"R8","1",47,R,Resistor,,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+"R12, R13, R18, R19","4",4.7k,R,Resistor,,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+"R15","1",10k,R,Resistor,,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+"RN16","1",220/330,R_Network_Dividers_x08_SIP,"8 voltage divider network, dual terminator, SIP package",,Resistor_THT:R_Array_SIP10
+"U_B12, U_D12, U_F14, U_K6, U_K10, U_L6, U_L14","7",74LS00,74LS00,Quad 2-input NAND,,Package_DIP:DIP-14_W7.62mm
+"U_C7, U_D10, U_E8, U_K12","4",74LS02,74LS02,Quad 2-input NOR,,Package_DIP:DIP-14_W7.62mm
+"U_A3, U_A15, U_C8, U_C10, U_E12, U_E14, U_J6","7",74LS04,74LS04,Hex Inverter,,Package_DIP:DIP-14_W7.62mm
+"U_B11, U_E10, U_E11","3",74LS10,74LS10,Triple 3-input NAND,,Package_DIP:DIP-14_W7.62mm
+"U_D8, U_H13","2",74LS20,74LS20,Dual 4-input NAND,,Package_DIP:DIP-14_W7.62mm
+"U_B7, U_B8","2",74LS30,74LS30,8-input NAND,,Package_DIP:DIP-14_W7.62mm
+"U_A13, U_M10","2",74LS37,74LS37,Quad 2-input NAND buffer,,Package_DIP:DIP-14_W7.62mm
+"U_A2, U_A14","2",74LS38,74LS38,Quad Buffer 2-input NAND Open collector,,Package_DIP:DIP-14_W7.62mm
+"U_A1, U_B15, U_E15, U_F12, U_L10, U_M9","6",74LS74,74LS74,"Dual D Flip-flop, Set & Reset",,Package_DIP:DIP-14_W7.62mm
+"U_L13","1",74LS109,74LS109,"Dual JK Flip-Flop, Set & Reset",,Package_DIP:DIP-16_W7.62mm
+"U_D7, U_H12","2",SN74120,SN74120,Pulse Synchronizer/Driver,,Package_DIP:DIP-16_W7.62mm
+"U_D3, U_E6, U_E7, U_H11, U_K11","5",74LS138,74LS138,Decoder 3 to 8 active low outputs,,Package_DIP:DIP-16_W7.62mm
+"U_D2","1",74LS139,74LS139,"Dual Decoder 1 of 4, Active low outputs",,Package_DIP:DIP-16_W7.62mm
+"U_J10, U_J11, U_K9","3",74LS151,74LS151,Multiplexer 8 to 1,,Package_DIP:DIP-16_W7.62mm
+"U_J12, U_J13, U_F6, U_K13","4",74LS153,74LS153,Dual Multiplexer 4 to 1,,Package_DIP:DIP-16_W7.62mm
+"U_B3, U_B4, U_C3, U_C4, U_C14, U_D6, U_L11","7",74LS157,74LS157,Quad 2 to 1 line Multiplexer,,Package_DIP:DIP-16_W7.62mm
+"U_A4, U_A5, U_A6, U_A8, U_A9, U_A10, U_A7, UB11, U_M6, U_M7, U_M8, U_M14, U_M15","13",74LS240,74LS240,Octal Buffer/Line Driver with 3-State inverting Outputs,,Package_DIP:DIP-20_W7.62mm_Socket
+"UA12","1",74LS240/756,74LS240,"Octal Buffer/Line Driver, inverting outputs, 74LS240 for 3-State Output, or 74LS756 for Open collector output",,Package_DIP:DIP-20_W7.62mm_Socket
+"U_B1, U_B2, U_B5, U_B6, U_C1, U_C2, U_C5, U_C6, U_C15","9",74LS669,74LS669,Synchronous 4-bit Up/Down Binary counter,,Package_DIP:DIP-16_W7.62mm
+"U_D4, U_D5, U_E5, U_F13","4",74LS174,74LS174,"Hex D-type Flip-Flop, reset",,Package_DIP:DIP-16_W7.62mm
+"U_C11, U_D13","2",74LS374,74LS374,"8-bit Register, 3-state outputs",,Package_DIP:DIP-20_W7.62mm
+"U_H6","1",74LS253,74LS253,"Dual Multiplexer 4 to 1, 3-State Outputs",,Package_DIP:DIP-16_W7.62mm
+"U_F11, U_M13","2",74LS259,74LS259,8-bit addressable latch,,Package_DIP:DIP-16_W7.62mm
+"U_H14","1",74LS368,74LS368,"Hex Bus Driver inverter, 3-state outputs",,Package_DIP:DIP-16_W7.62mm
+"UA11","1",74LS373,74LS373,"8-bit Latch, 3-state outputs",,Package_DIP:DIP-20_W7.62mm_Socket
+"UB12, U_C9, U_C13, U_F5, U_H5, U_J5, U_K5, U_L5, U_M5","9",74LS377,74LS377,8-bit Register,,Package_DIP:DIP-20_W7.62mm_Socket
+"U_D9, U_D11, U_J9, U_M12","4",74LS378,74LS378,6-bit Register,,Package_DIP:DIP-16_W7.62mm
+"U_B9, U_B10, U_D14, U_D15","4",AM93L422,AM93L422,"SRAM 256 x 4, Separated Read/Write port",,Package_DIP:DIP-22_W10.16mm_Socket
+"U_F7, U_F9","2",AM2901,AM2901,4-Bit Microprocessor Slice,,Package_DIP:DIP-40_W15.24mm_Socket
+"U_J7, U_K7","2",AM2909,AM2909,"AMD 4 Bit Slice Micro Control Sequencer, with AHR and OR inputs",,Package_DIP:DIP-28_W15.24mm_Socket
+"U_L9","1",AM2911,AM2911,AMD 4 Bit Slice Micro Control Sequencer,,Package_DIP:DIP-20_W7.62mm_Socket
+"U_B13","1",27C16,27C16,UV EPROM 16KiBit 2K x 8,,Package_DIP:DIP-24_W15.24mm_Socket_LongPads
+"U_MWE2, U_MWF2, U_MWH2, U_MWJ2, U_MWK2, U_MWL2, U_MWM2","7",27C16/28C256,28C256,"DIP-24 or DIP-28, EPROM or EEPROM, 2K/4K/32K x 8",,Package_DIP_Custom:DIP-28_W15.24mm_Socket_LongPads
+"XTAL1","1",15.000MHz,Crystal,Two pin crystal,,Crystal:Crystal_HC52-U_Horizontal
