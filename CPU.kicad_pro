@@ -432,16 +432,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Alt",
-        "nets": [
-          "DataP.D_{0}",
-          "DataP.D_{1}",
-          "DataP.D_{2}",
-          "DataP.D_{3}",
-          "DataP.D_{4}",
-          "DataP.D_{5}",
-          "DataP.D_{6}",
-          "DataP.D_{7}"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(171, 82, 199)",
         "track_width": 0.1524,
@@ -459,66 +450,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Ext",
-        "nets": [
-          "/Sys.5MHz",
-          "/Sys.Reset",
-          "/Sys.~{APRE}",
-          "/Sys.~{A_{0}}",
-          "/Sys.~{A_{10}}",
-          "/Sys.~{A_{1}}",
-          "/Sys.~{A_{2}}",
-          "/Sys.~{A_{3}}",
-          "/Sys.~{A_{4}}",
-          "/Sys.~{A_{5}}",
-          "/Sys.~{A_{6}}",
-          "/Sys.~{A_{7}}",
-          "/Sys.~{A_{8}}",
-          "/Sys.~{A_{9}}",
-          "/Sys.~{CA_{15}}",
-          "/Sys.~{CPL_{0}}",
-          "/Sys.~{CPL_{1}}",
-          "/Sys.~{CPL_{2}}",
-          "/Sys.~{CPL_{3}}",
-          "/Sys.~{DRDY}",
-          "/Sys.~{D_{0}}",
-          "/Sys.~{D_{1}}",
-          "/Sys.~{D_{2}}",
-          "/Sys.~{D_{3}}",
-          "/Sys.~{D_{4}}",
-          "/Sys.~{D_{5}}",
-          "/Sys.~{D_{6}}",
-          "/Sys.~{D_{7}}",
-          "/Sys.~{INR0}",
-          "/Sys.~{INR1}",
-          "/Sys.~{INR2}",
-          "/Sys.~{INR3}",
-          "/Sys.~{INTACK}",
-          "/Sys.~{INTREQ}",
-          "/Sys.~{MemFault}",
-          "/Sys.~{PA_{11}}",
-          "/Sys.~{PA_{12}}",
-          "/Sys.~{PA_{13}}",
-          "/Sys.~{PA_{14}}",
-          "/Sys.~{PA_{15}}",
-          "/Sys.~{PA_{16}}",
-          "/Sys.~{PA_{17}}",
-          "/Sys.~{PTR7_oc}",
-          "/Sys.~{ParityTest}",
-          "/Sys.~{RA_{11}}",
-          "/Sys.~{RA_{12}}",
-          "/Sys.~{RA_{13}}",
-          "/Sys.~{RA_{14}}",
-          "/Sys.~{RA_{15}}",
-          "/Sys.~{RDIN}",
-          "/Sys.~{WTIN}",
-          "P7_1",
-          "P7_13",
-          "P7_2",
-          "P7_3",
-          "P7_4",
-          "P7_5",
-          "P7_8"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(255, 118, 71)",
         "track_width": 0.1524,
@@ -536,12 +468,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Power",
-        "nets": [
-          "+12V",
-          "+5V",
-          "-12V",
-          "GND"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.27,
@@ -559,16 +486,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Res",
-        "nets": [
-          "Res.D_{0}",
-          "Res.D_{1}",
-          "Res.D_{2}",
-          "Res.D_{3}",
-          "Res.D_{4}",
-          "Res.D_{5}",
-          "Res.D_{6}",
-          "Res.D_{7}"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(201, 47, 47)",
         "track_width": 0.1524,
@@ -617,7 +535,207 @@
       },
       {
         "netclass": "Ext",
-        "pattern": "/~{P7_2}"
+        "pattern": "/Sys.5MHz"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.Reset"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{APRE}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{A_{0}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{A_{10}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{A_{1}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{A_{2}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{A_{3}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{A_{4}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{A_{5}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{A_{6}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{A_{7}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{A_{8}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{A_{9}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{CA_{15}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{CPL_{0}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{CPL_{1}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{CPL_{2}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{CPL_{3}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{DRDY}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{D_{0}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{D_{1}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{D_{2}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{D_{3}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{D_{4}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{D_{5}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{D_{6}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{D_{7}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{INR0}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{INR1}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{INR2}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{INR3}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{INTACK}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{INTREQ}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{MemFault}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{PA_{11}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{PA_{12}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{PA_{13}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{PA_{14}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{PA_{15}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{PA_{16}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{PA_{17}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{PTR7_oc}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{ParityTest}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{RA_{11}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{RA_{12}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{RA_{13}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{RA_{14}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{RA_{15}}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{RDIN}"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "/Sys.~{WTIN}"
       },
       {
         "netclass": "Ext",
@@ -625,7 +743,19 @@
       },
       {
         "netclass": "Ext",
+        "pattern": "P7_13"
+      },
+      {
+        "netclass": "Ext",
         "pattern": "P7_2"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "P7_3"
+      },
+      {
+        "netclass": "Ext",
+        "pattern": "P7_4"
       },
       {
         "netclass": "Ext",

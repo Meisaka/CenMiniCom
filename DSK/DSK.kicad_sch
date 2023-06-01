@@ -37650,7 +37650,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid be8c1442-e16b-4d5e-abe0-aa90cdd368fb)
   )
-  (text "Reading 128 Bits in State 7\nOR 16 Bits in State 15\nTriggers FormatError"
+  (text "Reading 256 Bits in State 7\nOR 16 Bits in State 15\nTriggers FormatError"
     (at 739.14 933.45 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c2c8fdbd-6dfb-4010-a86c-825e4a100823)
